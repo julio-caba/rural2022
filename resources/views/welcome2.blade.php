@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="testVApp">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Test Vocacional Municipalidad de General Pico</title>
+    <link href="https://www.generalpico.gov.ar/Arbol-favico.gif" rel="icon" type="image/x-icon" />
+    <meta name="generator" content="Bootply"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="test/css/bootstrap.min.css" rel="stylesheet">
+    <link href="test/vendor/bootstrapDialog/bootstrap-dialog.min.css" rel="stylesheet">
+    <link href="test/vendor/fa/css/font-awesome.min.css" rel="stylesheet">
+    <link href="test/vendor/angular-chart/angular-chart.css" rel="stylesheet">
+    <link href="test/vendor/angular-tooltip/angular-tooltips.min.css" rel="stylesheet">
+    <script src="test/vendor/angular-chart/Chart.min.js"></script>
+  
+    <link href="test/css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+
+<div class="header alt vert" >
+    <div class="container vert col-md-12 col-sm-12 col-xs-12">
+
+        <h1 class="title">Test Vocacional</h1>
+
+        <p class="lead">Toma el test de Holland y conoce tu carrera</p>
+
+        <div>&nbsp;</div>
+        <a href="#test" class="btn btn-default btn-lg">Empieza</a>
+    </div>
+</div>
+<div class="descriptions" id="descripcion">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>Descripción</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <div class="descriptions-item">
+                    <p>La aplicación Test Vocacional permite poder conocer que carreras del ámbito que
+                        están relacionadas con el perfil de personalidad que cumple la persona que toma el test. Básicamente se deben responder ciertas preguntas
+                        sobre los intereses, gustos, y sentimientos sobre ocupaciones.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 col-sm-2 col-lg-2 col-md-offset-2 col-sm-offset-2 col-lg-offset-2 text-center">
+            <div class="descriptions">
+                <i class="fa fa-male"></i>
+                <h4>Experto</h4>
+                <p>Recibe una recomendación como un psícologo vocacional experto.</p>
+            </div>
+        </div>
+            <div class="col-md-2 col-sm-2 col-lg-2 text-center">
+                <div class="descriptions">
+                    <i class="fa fa-asterisk"></i>
+                    <h4>Simple</h4>
+                    <p>No es para nada complicado, no hay ni que leer mucho.</p>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-2 col-lg-2 text-center">
+                <div class="descriptions">
+                    <i class="fa fa-bar-chart"></i>
+                    <h4>Gráficos</h4>
+                    <p>Los resultados, no serán simple textos estáticos.</p>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-2 col-lg-2 text-center">
+                <div class="descriptions">
+                    <i class="fa fa-print"></i>
+                    <h4>Imprime</h4>
+                    <p>Tus resultados guardarlo por el tiempo que necesites.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <hr/>
+            <div class="col-md-2 col-sm-2 col-lg-2 col-xs-2 col-md-offset-2 col-sm-offset-2 col-lg-offset-2 col-xs-offset-2">
+                <h1><i class="fa fa-graduation-cap fa-pull-right"></i></h1>
+            </div>
+
+            <div class="col-md-7 col-sm-7 col-lg-7 col-xs-7 col-md-offset-1 col-sm-offset-1 col-lg-offset-1 col-xs-offset-1">
+                <h1 class="pull-left">Conoce tu carrera</h1>
+                <p class="lead pull-left">Una ayuda experta a tan sólo un click</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="test" class="blurb" ng-controller="BarCtrl">
+    <div class="container" ng-hide="endOfQuestions == true">
+        <div class="row">
+            <div class="col-md-12 ">
+                <h3>{{sections[currentSection].name}}</h3>
+                <p class="paragraphs">{{sections[currentSection].description}}</p>
+            </div>
+        </div>
+        <div class="container" ng-hide="showEvaluation==true" >
+            <div ng-repeat="q in sections[currentSection].questions[currentVariable]" ng-show="currentQuestion == $index"  class="row text-center">
+                <div class="col-md-12 margin-bottom">
+                    <h2>{{q}}</h2>
+                </div>
+                <div class="text-center col-md-12 col-sm-12 col-xs-12">
+                    <button type="button" class="btn btn-default btn-margin-bottom text" ng-click="saveClick(1)">{{textQuestionSection[sectionOfYes].yes}}</button>
+                </div>
+                <div class="text-center col-md-12 col-sm-12 col-xs-12">
+                    <button type="button" class="btn btn-default btn-margin-top text" ng-click="saveClick(0)">{{textQuestionSection[sectionOfYes].no}}</button>
+                </div>
+            </div>
+        </div>
+        <div class="container" ng-show="showEvaluation==true">
+            <div ng-repeat="q in sections[currentSection].questions[currentVariable]" ng-show="currentQuestion == $index"  class="row text-center">
+                <div class="col-md-12">
+                    <h2>{{q}}</h2>
+                </div>
+                <div class="text-center col-md-12 col-sm-12 col-xs-12">
+                    <button type="button" ng-repeat="answer in autoEvaluation" ng-click="saveClick(answer)" class="btn btn-default">{{answer  | numberEva}}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="printable" ng-show="endOfQuestions == true">
+        <h2>¡Hemos terminado!</h2>
+        <p><hr></p>
+        <h4>Tus resultados:</h4>
+        <div class="container" id="result">
+                <div class="col-md-offset-2 col-lg-offset-2 col-md-8 col-lg-8">
+                    <canvas id="bar" class="chart chart-bar"
+                            chart-data="data" chart-labels="labels" >
+                    </canvas>
+                </div>
+        </div>
+
+        <h4>Combinación de letras: <a href="#test" ng-click="dialogNew(1)" class="fa fa-info-circle links">  </a></h4>
+
+        <h5 class="text-muted">{{suggestedCode}}</h5>
+        <div class="row" >
+            <h4>Tu estilo de personalidad: <a href="#test" ng-click="dialogNew(2)" class="fa fa-info-circle links">  </a></h4>
+            <div ng-repeat="message in messages">
+                <h5 class="paragraphs text-primary">{{message.name}}</h5>
+                <h6 class="paragraphs">{{message.description}}</h6>
+                <h6 class="paragraphs">{{message.ocupations}}</h6>
+            </div>
+        </div>
+        <div class="row" >
+        <h4>Oferta academica <a href="#test" ng-click="dialogNew(3)" class="fa fa-info-circle links">  </a></h4>
+            <div ng-repeat="career in careersSuggestions" >
+                <h5 class="paragraphs text-success">{{career.name}}</h5>
+            </div>
+        </div>
+        <div class="row" ng-show="noOrdinaryCareer==true">
+            <h4>Oferta academica sin prioridad en peso de personalidad <a href="#test" ng-click="dialogNew(4)" class="fa fa-info-circle links">  </a></h4>
+            <div ng-repeat="career in careersSuggestionsNoOrder">
+                <h5 class="paragraphs text-success">{{career}}</h5>
+            </div>
+        </div>
+            <div class="row">
+                <h4>Conclusión: <a href="#test" ng-click="dialogNew(5)" class="fa fa-info-circle links">  </a></h4>
+                <h5 class="paragraphs text-info" ng-show="showPsMessage==true">{{psMessage}}</h5>
+                <h5 class="paragraphs text-info" ng-show="showNothingFound==true">{{nothingFound}}</h5>
+            </div>
+    </div>
+    <div class="container space text-center">
+        <div clas="row">
+            <button type="button" class="btn btn-default" ng-click="restartEverything()">Restablecer</button>
+            <a href="#" class="btn btn-default" ng-hide="endOfQuestions == true" title="Scroll to top">Inicio</a>
+            <!-- <button type="button" class="btn btn-default" ng-click="" ng-hide="endOfQuestions == true">Inicio</button> -->
+            <button type="button" class="btn btn-default" ng-click="printDiv('printable')" ng-show="endOfQuestions == true">Imprimir</button>
+
+        </div>
+    </div>
+</div>
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 text-center">
+                
+                <hr>
+               
+            </div>
+        </div>
+    </div>
+</footer>
+
+<ul class="nav pull-right scroll-down">
+    <li><a href="#" title="Scroll down"><i class="icon-chevron-down icon-3x"></i></a></li>
+</ul>
+<ul class="nav pull-right scroll-top">
+    <li><a href="#" title="Scroll to top"><i class="icon-chevron-up icon-3x"></i></a></li>
+</ul>
+
+<!-- script references -->
+<script src="test/vendor/jquery/jquery-2.1.4.min.js"></script>
+<script src="test/vendor/angular/angular.min.js"></script>
+<script src="test/js/app.js"></script>
+<script src="test/js/filters/filter_evaluation.js"></script>
+<script src="test/js/bootstrap.min.js"></script>
+<script src="test/js/scripts.js"></script>
+<script src="test/vendor/bootstrapDialog/bootstrap-dialog.min.js"></script>
+<script src="test/vendor/angular-chart/angular-chart.min.js"></script>
+<script src="test/vendor/angular-tooltip/angular-tooltips.min.js"></script>
+</body>
+</html>
