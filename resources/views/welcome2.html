@@ -7,14 +7,13 @@
     <link href="https://www.generalpico.gov.ar/Arbol-favico.gif" rel="icon" type="image/x-icon" />
     <meta name="generator" content="Bootply"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link href="test/css/bootstrap.min.css" rel="stylesheet">
-    <link href="test/vendor/bootstrapDialog/bootstrap-dialog.min.css" rel="stylesheet">
-    <link href="test/vendor/fa/css/font-awesome.min.css" rel="stylesheet">
-    <link href="test/vendor/angular-chart/angular-chart.css" rel="stylesheet">
-    <link href="test/vendor/angular-tooltip/angular-tooltips.min.css" rel="stylesheet">
-    <script src="test/vendor/angular-chart/Chart.min.js"></script>
-  
-    <link href="test/css/styles.css" rel="stylesheet">
+    <link href="frontend/vocacional/css/bootstrap.min.css" rel="stylesheet">
+    <link href="frontend/vocacional/vendor/bootstrapDialog/bootstrap-dialog.min.css" rel="stylesheet">
+    <link href="frontend/vocacional/vendor/fa/css/font-awesome.min.css" rel="stylesheet">
+    <link href="frontend/vocacional/vendor/angular-chart/angular-chart.css" rel="stylesheet">
+    <link href="frontend/vocacional/vendor/angular-tooltip/angular-tooltips.min.css" rel="stylesheet">
+    <script src="frontend/vocacional/vendor/angular-chart/Chart.min.js"></script> 
+    <link href="frontend/vocacional/css/styles.css" rel="stylesheet">
 </head>
 <body>
 
@@ -166,7 +165,7 @@
     <div class="container space text-center">
         <div clas="row">
             <button type="button" class="btn btn-default" ng-click="restartEverything()">Restablecer</button>
-            <a href="#" class="btn btn-default" ng-hide="endOfQuestions == true" title="Scroll to top">Inicio</a>
+            <a href="/home" class="btn btn-default" >Inicio</a>
             <!-- <button type="button" class="btn btn-default" ng-click="" ng-hide="endOfQuestions == true">Inicio</button> -->
             <button type="button" class="btn btn-default" ng-click="printDiv('printable')" ng-show="endOfQuestions == true">Imprimir</button>
 
@@ -196,14 +195,15 @@
 </ul>
 
 <!-- script references -->
-<script src="test/vendor/jquery/jquery-2.1.4.min.js"></script>
-<script src="test/vendor/angular/angular.min.js"></script>
-<script src="test/js/app.js"></script>
-<script src="test/js/filters/filter_evaluation.js"></script>
-<script src="test/js/bootstrap.min.js"></script>
-<script src="test/js/scripts.js"></script>
-<script src="test/vendor/bootstrapDialog/bootstrap-dialog.min.js"></script>
-<script src="test/vendor/angular-chart/angular-chart.min.js"></script>
-<script src="test/vendor/angular-tooltip/angular-tooltips.min.js"></script>
+<script src="frontend/vocacional/vendor/jquery/jquery-2.1.4.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<!-- <script src="frontend/vocacional/vendor/angular/angular.min.js"></script> -->
+<script src="frontend/vocacional/js/app.js"></script>
+<script src="frontend/vocacional/js/filters/filter_evaluation.js"></script>
+<script src="frontend/vocacional/js/bootstrap.min.js"></script>
+<script src="frontend/vocacional/js/scripts.js"></script>
+<script src="frontend/vocacional/vendor/bootstrapDialog/bootstrap-dialog.min.js"></script>
+<script src="frontend/vocacional/vendor/angular-chart/angular-chart.min.js"></script>
+<script src="frontend/vocacional/vendor/angular-tooltip/angular-tooltips.min.js"></script>
 </body>
 </html>

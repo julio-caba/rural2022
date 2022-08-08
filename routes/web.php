@@ -23,7 +23,13 @@ Route::get('/', function () {
 /* Route::get('/vocacional', function () {
     return view('vocacional');
 }); */
-Route::view('/welcome2', 'welcome2');
+Route::get('/vocacional', function(){
+    View::addExtension('html','php');
+    return View::make('welcome2');
+});
+
+
+/* Route::view('/welcome2', 'welcome2'); */
 /* Route::get('/vocacional', 'test'); */
 Auth::routes();
 
