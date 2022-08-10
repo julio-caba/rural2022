@@ -1,0 +1,86 @@
+* {
+    transition: all 0.3s;
+  }
+  body {
+    background: #b4d4dc ;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: calibri;
+    font-size: 120%;
+  }
+  .contenedor {
+    width: 98vw;
+    height: 97vh;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .encabezado {
+    position: relative;
+    background: white;
+    min-width: 300px;
+    width: 70%;
+    max-width: 600px;
+    padding: 10px;
+  }
+  .categoria {
+    opacity: 0.3;
+    text-align: left;
+  }
+  .pregunta {
+    padding: 10px;
+  }
+  .imagen {
+    object-fit: cover;
+    height: 0px;
+    width: 0px;
+  }
+  .boton{
+    background-color: #BE87B4 ;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+  .boton:hover{
+    transform: scale(1.05);
+    background-color:  #994887;
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+  .btn {
+    background: white;
+    width: 60%;
+    max-width: 550px;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+  }
+  .btn:hover {
+    transform: scale(1.05);
+    background-color: #68C0BD ;
+  }  
+  .numero{
+    position: absolute;
+    opacity:0.3;
+    top: 10px;
+    right: 10px;
+  }  
+  .puntaje{
+    padding:10px;
+    color:white;
+  }

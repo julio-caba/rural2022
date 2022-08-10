@@ -23,13 +23,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/icheck-bootstrap/3.0.1/icheck-bootstrap.min.css"
           integrity="sha512-8vq2g5nHE062j3xor4XxPeZiPjmRDh6wlufQlfC6pdQ/9urJkU07NM0tEREeymP++NczacJ/Q59ul+/K2eYvcg=="
           crossorigin="anonymous"/>
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <link rel="stylesheet" href="css/numpad-light.css">
+    <script src="js/numpad.js"></script>
 </head>
 <style>
     body  {
@@ -69,7 +64,7 @@
                     @enderror
                 </div> -->
                 <div class="input-group mb-3">
-                    <input type="text" name="dni" class="form-control @error('dni') is-invalid @enderror" value="{{ old('dni') }}" placeholder="Ingrese su dni">
+                    <input type="text" name="dni" id="ingreso" class="form-control @error('dni') is-invalid @enderror" value="{{ old('dni') }}" placeholder="Ingrese su dni">
                     <div class="input-group-append">
                         <div class="input-group-text">
                             <span class="fas fa-user"></span>
@@ -162,6 +157,12 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.1.0/js/adminlte.min.js"
         integrity="sha512-AJUWwfMxFuQLv1iPZOTZX0N/jTCIrLxyZjTRKQostNU71MzZTEPHjajSK20Kj1TwJELpP7gl+ShXw5brpnKwEg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+    window.addEventListener("load", () => {
+      // (C1) BASIC NUMPAD
+      numpad.attach({target: document.getElementById("ingreso")});
 
+    });
+    </script>
 </body>
 </html>

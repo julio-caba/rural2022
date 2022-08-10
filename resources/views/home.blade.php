@@ -1,18 +1,23 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row">
-        
-    <div class="card mt-2" style="width: 18rem;">
-        <div class="card-body mt-2">
-            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="{{ url('/vocacional') }}">a</a>
+<link rel="stylesheet" href="css/home.css">
+<div class="instagram-photo">
+        <h2 class="h1 pl-2" style="color: #00A27F;">Selecciona una de las siguientes opciones:</h2>        
+        <a href="{{ url('/vocacional') }}">
+        <div class="insta-item set-bg">
+            <div class="inside-text">
+            </div>
+        </div>                          
+        </a>
+        <a href="{{ url('/preguntas') }}">
+        <div class="insta-item set-bg2">
+            <div class="inside-text">
+            </div>
         </div>
+        </a>
+        
+       
     </div>
 
-
-    </div>
-</div>
 @endsection

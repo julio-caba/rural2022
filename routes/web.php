@@ -20,17 +20,18 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('auth.register');
 });
-/* Route::get('/vocacional', function () {
-    return view('vocacional');
-}); */
+
 Route::get('/vocacional', function(){
     View::addExtension('html','php');
     return View::make('welcome2');
 });
 
+Route::get('/preguntas', function(){
+    View::addExtension('html','php');
+    return View::make('preguntas');
+});
 
-/* Route::view('/welcome2', 'welcome2'); */
-/* Route::get('/vocacional', 'test'); */
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

@@ -1,0 +1,52 @@
+[
+    {
+        "categoria": "Empresas Verdes",
+        "pregunta": "¿Que es una empresa Verde?",
+        "respuesta": "Una Empresa que respeta al medio ambiente",
+        "incorrecta1": "Una Empresa que se dedica a la tala de árboles",
+        "incorrecta2": "Una Empresa de Comida Vegana",
+        "incorrecta3": "Una Empresa de anfibios",
+        "imagen": "",
+        "objectFit": "cover"
+    },
+    {
+        "categoria": "Empresas Verdes",
+        "pregunta": "¿Cuáles son los objetivos de una Empresa Verde?",
+        "respuesta": "Todas Son Correctas",
+        "incorrecta1": "Ser menos contaminantes",
+        "incorrecta2": "Evitar afectar al entorno que rodea a la empresa",
+        "incorrecta3": "Respetar el planeta",
+        "imagen": "",
+        "objectFit": "cover"
+    },
+    {
+        "categoria": "Empresas Verdes",
+        "pregunta": "¿Qué impacto generan las Empresas Verdes en la sociedad y en el medio ambiente?",
+        "respuesta": "Mejora las condiciones de vida y Reducen la contaminación ",
+        "incorrecta1": "Genera más puestos de trabajo",
+        "incorrecta2": "Aumentan los costos de operación",
+        "incorrecta3": "Reducen la eficiencia a través de un servicio o producto",
+        "imagen": "",
+        "objectFit": "cover"
+    },
+    {
+        "categoria": "Empresas Verdes",
+        "pregunta": "¿Cuáles son las ventajas de una Empresa Verde?",
+        "respuesta": "Todas son correctas",
+        "incorrecta1": "Optimizar recursos",
+        "incorrecta2": "Reducir la contaminación y los impactos ambientales",
+        "incorrecta3": "Un producto más competitivo",
+        "imagen": "",
+        "objectFit": "cover"
+    },
+    {
+        "categoria": "Empresas Verdes",
+        "pregunta": "¿Cómo podemos transformar una empresa en una Empresa Verde?",
+        "respuesta": "Todas son correctas ",
+        "incorrecta1": "Reciclar y separar los residuos que se produzcan",
+        "incorrecta2": "Apagar la luz cuando no haya nadie",
+        "incorrecta3": "Utilizar bombillas de bajo consumo",
+        "imagen": "",
+        "objectFit": "cover"
+    }
+]
