@@ -4,7 +4,7 @@
 angular.module('testVApp')
     .controller("BarCtrl", function ($scope, $http, $timeout) {
         $scope.autoEvaluation = [1,2,3,4,5,6,7];
-        $scope.textQuestionSection = [{"yes": "Me gusta", "no":"Me disgusta"}, {"yes": "Si", "no":"No"}];
+        $scope.textQuestionSection = [{"yes": "Me gusta", "no":"No me gusta"}, {"yes": "Si", "no":"No"}];
         $scope.currentQuestion = 0;
         $scope.showEvaluation = false;
         $scope.endOfQuestions = false;
@@ -1182,7 +1182,7 @@ angular.module('testVApp')
                 case 5: {
                     var $textAndPic = $('<div></div>');
                     $textAndPic.append('<p>Esta sección muestra información relacionada a la necesidad de visitar un psícologo vocacional, y de cúal seria el procedimiento si fuese necesario. </p>');
-                    $textAndPic.append('<p>Por ejemplo, si el sistema recomienda una carrera; dicha decisión es recomendada que se converse con un psícologo para que haga un análisis más profundo, y principalmente si la persona no se siente agusto con la carrera sugerida para que otra alternativa sea mostrada.</p>');
+                    $textAndPic.append('<p>Por ejemplo, si el sistema recomienda una carrera; dicha decisión es recomendada que se converse con un psícologo para que haga un análisis más profundo, y principalmente si la persona no se siente a gusto con la carrera sugerida para que otra alternativa sea mostrada.</p>');
                     BootstrapDialog.show({
                         type: BootstrapDialog.TYPE_WARNING,
                         title: 'Información sobre concclusión',

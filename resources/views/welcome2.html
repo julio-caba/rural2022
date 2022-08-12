@@ -18,7 +18,7 @@
 <body>
 
 
-<div class="header alt vert" >
+<!-- <div class="header alt vert" >
     <div class="container vert col-md-12 col-sm-12 col-xs-12">
 
         <h1 class="title">Test Vocacional</h1>
@@ -28,8 +28,8 @@
         <div>&nbsp;</div>
         <a href="#test" class="btn btn-default btn-lg">Empecemos</a>
     </div>
-</div>
-<div class="descriptions" id="descripcion">
+</div> -->
+<!-- <div class="descriptions" id="descripcion">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
@@ -87,7 +87,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 <div id="test" class="blurb" ng-controller="BarCtrl">
     <div class="container" ng-hide="endOfQuestions == true">
@@ -133,11 +133,11 @@
                 </div>
         </div>
 
-        <h4>Combinación de letras: <a href="#test" ng-click="dialogNew(1)" class="fa fa-info-circle links">  </a></h4>
+        <!-- <h4>Combinación de letras: <a href="#test" ng-click="dialogNew(1)" class="fa fa-info-circle links">  </a></h4> -->
 
         <h5 class="text-muted">{{suggestedCode}}</h5>
         <div class="row" >
-            <h4>Tu estilo de personalidad: <a href="#test" ng-click="dialogNew(2)" class="fa fa-info-circle links">  </a></h4>
+            <h4>Tu estilo de personalidad: <!-- <a href="#test" ng-click="dialogNew(2)" class="fa fa-info-circle links">  </a> --></h4>
             <div ng-repeat="message in messages">
                 <h5 class="paragraphs text-primary">{{message.name}}</h5>
                 <h6 class="paragraphs">{{message.description}}</h6>

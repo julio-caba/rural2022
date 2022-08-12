@@ -40,7 +40,7 @@
       "C":"0"
     },
     {
-      "name":"Arquitectura",
+      "name":"Artes y Música",
       "R":"1",
       "I":"1",
       "A":"1",
@@ -65,6 +65,15 @@
       "S":"1",
       "E":"1",
       "C":"1"
+    },
+    {
+      "name":"ingenieria en recursos naturales y medio ambiente",
+      "R":"1",
+      "I":"0",
+      "A":"1",
+      "S":"0",
+      "E":"1",
+      "C":"0"
     },
     {
       "name":"Derecho",

@@ -12,6 +12,7 @@
 }
 .instagram-photo {
 	overflow: hidden;
+	padding-top: 5em;
 }
 
 .instagram-photo .insta-item {

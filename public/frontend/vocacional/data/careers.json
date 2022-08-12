@@ -1,7 +1,7 @@
 {
   "careers":[
     {
-      "name":"No hemos encontrado una carrera ideal para vos",
+      "name":"No hemos encontrado una carrera ideal para vos, pero te dejamos algunas opciones",
       "code":"0"
     },
     {
@@ -13,12 +13,36 @@
       "code":"ESA"
     },
     {
+      "name":"Biología",
+      "code":"ASC"
+    },
+    {
+      "name":"Enfermería",
+      "code":"IEA"
+    },
+    {
+      "name":"Historia",
+      "code":"IEA"
+    },
+    {
       "name":"Administración de Empresas, Hoteleras y Turísticas",
       "code":"ESA"
     },
     {
+      "name":"Artes y Música",
+      "code":"ARI"
+    },
+    {
+      "name":"Ciencias de la Educación ",
+      "code":"SRI"
+    },
+    {
       "name":"Arquitectura",
       "code":"AIR"
+    },
+    {
+      "name":"Arquitectura",
+      "code":"IAR"
     },
     {
       "name":"Publicidad",
@@ -49,6 +73,18 @@
       "code":"IRE"
     },
     {
+      "name":"Abogacia",
+      "code":"CSR"
+    },
+    {
+      "name":"Administracion de empresas",
+      "code":"CSE"
+    },
+    {
+      "name":"Contador Publico",
+      "code":"CER"
+    },
+    {
       "name":"Ingeniería Industrial",
       "code":"EIR"
     },
@@ -57,12 +93,16 @@
       "code":"IRE"
     },
     {
-      "name":"Ingeniería Industrial",
+      "name":"Ingeniería electromecanica",
       "code":"RIA"
     },
     {
-      "name":"Otros",
+      "name":"ingenieria en recursos naturales y medio ambiente",
       "code":"RAE"
+    },
+    {
+      "name":"Agronomia",
+      "code":"SIR"
     },
     {
       "name":"Ingeniería en Sistemas",
