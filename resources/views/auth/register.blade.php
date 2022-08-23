@@ -3,6 +3,17 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Julio Caba">
+    <!--  -->    
+    <meta property="og:locale" content="es_LA"/>
+    <meta property="og:site_name" content="Rural 2022"/>
+    <meta property="og:title" content="Rural 2022"/>
+    <meta property="og:url" content="https://www.rural2022.herokuapp.com"/>
+    <meta property="og:description" content="Municipalidad de General Pico"/>
+    <meta property="og:image" content="https://rural2022.herokuapp.com/frontend/preguntas/logo_muni_color.png" />
+    <meta property="og:image:url" content="https://rural2022.herokuapp.com/frontend/preguntas/logo_muni_color.png" />
+    <meta property="og:image:secure_url" content="https://rural2022.herokuapp.com/frontend/preguntas/logo_muni_color.png"/>
+    <!--  -->
     <link rel="icon" type="image/gif" sizes="96x96" href="https://www.generalpico.gov.ar/Arbol-favico.gif">
     <title>Municipalidad de General Pico - Rural 2022</title>
 
@@ -39,8 +50,7 @@
 </style>
 <body class="hold-transition register-page">
 <div class="register-box">
-    <div class="register-logo">
-        <!-- <a href="{{ url('/home') }}"><b>{{ config('app.name') }}</b></a> -->
+    <div class="register-logo">        
         <img src="img/footer-logo.png" alt="">
         <h1 class="text-white">Municipalidad de General Pico</h1> 
     </div>
@@ -51,18 +61,6 @@
 
             <form method="post" action="{{ route('register') }}">
                 @csrf
-
-                <!-- <div class="input-group mb-3">
-                    <input type="text" name="name" class="form-control @error('name') is-invalid @enderror" value="{{ old('name') }}" placeholder="Full name">
-                    <div class="input-group-append">
-                        <div class="input-group-text">
-                            <span class="fas fa-user"></span>
-                        </div>
-                    </div>
-                    @error('name')
-                    <span class="error invalid-feedback">{{ $message }}</span>
-                    @enderror
-                </div> -->
                 <div class="input-group mb-3">
                     <input type="text" name="dni" id="ingreso" class="form-control @error('dni') is-invalid @enderror" value="{{ old('dni') }}" placeholder="Ingrese su dni">
                     <div class="input-group-append">
@@ -74,70 +72,15 @@
                     <span class="error invalid-feedback">{{ $message }}</span>
                     @enderror
                 </div>
-                <!-- <div class="input-group mb-3">
-                    <input type="email"
-                           name="email"
-                           value="{{ old('email') }}"
-                           class="form-control @error('email') is-invalid @enderror"
-                           placeholder="Email">
-                    <div class="input-group-append">
-                        <div class="input-group-text">
-                            <span class="fas fa-envelope"></span>
-                        </div>
-                    </div>
-                    @error('email')
-                    <span class="error invalid-feedback">{{ $message }}</span>
-                    @enderror
-                </div>
-
-                <div class="input-group mb-3">
-                    <input type="password"
-                           name="password"
-                           class="form-control @error('password') is-invalid @enderror"
-                           placeholder="Password">
-                    <div class="input-group-append">
-                        <div class="input-group-text">
-                            <span class="fas fa-lock"></span>
-                        </div>
-                    </div>
-                    @error('password')
-                    <span class="error invalid-feedback">{{ $message }}</span>
-                    @enderror
-                </div> -->
-
-                <!-- <div class="input-group mb-3">
-                    <input type="password"
-                           name="password_confirmation"
-                           class="form-control"
-                           placeholder="Retype password">
-                    <div class="input-group-append">
-                        <div class="input-group-text"><span class="fas fa-lock"></span></div>
-                    </div>
-                </div> -->
-
+                
                 <div class="row">
-                    <!-- <div class="col-8">
-                        <div class="icheck-primary">
-                            <input type="checkbox" id="agreeTerms" name="terms" value="agree">
-                            <label for="agreeTerms">
-                                I agree to the <a href="#">terms</a>
-                            </label>
-                        </div>
-                    </div> -->
-                    <!-- /.col -->
                     <div class="col-6" id="boton">
                         <button type="submit" class="btn btn-outline-primary btn-block">Registrarse</button>
-                    </div>
-                    <!-- /.col -->
+                    </div>          
                 </div>
-            </form>
-
-         <!--    <a href="{{ route('login') }}" class="text-center">I already have a membership</a> -->
-        </div>
-        <!-- /.form-box -->
-    </div><!-- /.card -->
-
-    <!-- /.form-box -->
+            </form>         
+        </div>        
+    </div>
 </div>
 <!-- /.register-box -->
 

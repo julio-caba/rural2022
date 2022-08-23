@@ -4,9 +4,19 @@
     <meta charset="UTF-8">
     <!-- <title>{{ config('app.name') }}</title> -->
     <link rel="icon" type="image/gif" sizes="96x96" href="https://www.generalpico.gov.ar/Arbol-favico.gif">
+        <!--  -->    
+    <meta property="og:locale" content="es_LA"/>
+    <meta property="og:site_name" content="Municipalidad de General Pico - Rural 2022"/>
+    <meta property="og:title" content="Municipalidad de General Pico - Rural 2022"/>
+    <meta property="og:url" content="https://rural-presentacion.herokuapp.com/"/>
+    <meta property="og:description" content="Municipalidad de General Pico"/>
+    <meta property="og:image" content="https://rural2022.herokuapp.com/frontend/preguntas/logo_muni_color.png" />
+    <meta property="og:image:url" content="https://rural2022.herokuapp.com/frontend/preguntas/logo_muni_color.png" />
+    <meta property="og:image:secure_url" content="https://rural2022.herokuapp.com/frontend/preguntas/logo_muni_color.png"/>
+    <!--  -->
     <title>Municipalidad de General Pico</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
-
+    <meta name="author" content="Julio Caba">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
           integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
