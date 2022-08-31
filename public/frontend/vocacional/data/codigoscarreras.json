@@ -1,7 +1,9 @@
 {
   "careers":[
     {
-      "name":"No hemos encontrado una carrera ideal para vos"
+      
+      "name":"Ingenieria en Sistemas \nMedicina Veterinaria \nEducación Inicial/Temprana \nArtes y Música"
+     
     },
     {
       "name":"Administración de Empresas",
@@ -203,10 +205,7 @@
     }
 
   ]
-
-
 }
-
 
 
 
