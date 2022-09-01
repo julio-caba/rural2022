@@ -124,18 +124,19 @@
     <div class="container" id="printable" ng-show="endOfQuestions == true">
         <h2>¡Hemos terminado!</h2>
         <p><hr></p>
-        <h4>Tus resultados:</h4>
-        <div class="container" id="result">
+       <!--  <h4>Tus resultados:</h4> -->
+        <!--   | EL GRAFICO DE LAS RESPUESTAS | 
+            <div class="container" id="result">
                 <div class="col-md-offset-2 col-lg-offset-2 col-md-8 col-lg-8">
                     <canvas id="bar" class="chart chart-bar"
                             chart-data="data" chart-labels="labels" >
                     </canvas>
                 </div>
-        </div>
+        </div> -->
 
         <!-- <h4>Combinación de letras: <a href="#test" ng-click="dialogNew(1)" class="fa fa-info-circle links">  </a></h4> -->
 
-        <h5 class="text-muted">{{suggestedCode}}</h5>
+      <!--   <h5 class="text-muted">{{suggestedCode}}</h5> -->
         <div class="row" >
             <h4>Tu estilo de personalidad: <!-- <a href="#test" ng-click="dialogNew(2)" class="fa fa-info-circle links">  </a> --></h4>
             <div ng-repeat="message in messages">
@@ -145,13 +146,13 @@
             </div>
         </div>
         <div class="row" >
-        <h4>Oferta academica <a href="#test" ng-click="dialogNew(3)" class="fa fa-info-circle links">  </a></h4>
+        <h4>Oferta academica <!-- <a href="#test" ng-click="dialogNew(3)" class="fa fa-info-circle links">  </a> --></h4>
             <div ng-repeat="career in careersSuggestions" >
                 <h5 class="paragraphs text-success">{{career.name}}</h5>
             </div>
         </div>
         <div class="row" ng-show="noOrdinaryCareer==true">
-            <h4>Oferta academica sin prioridad en peso de personalidad <a href="#test" ng-click="dialogNew(4)" class="fa fa-info-circle links">  </a></h4>
+            <h4>Oferta academica sin prioridad en peso de personalidad <!-- <a href="#test" ng-click="dialogNew(4)" class="fa fa-info-circle links"> -->  </a></h4>
             <div ng-repeat="career in careersSuggestionsNoOrder">
                 <h5 class="paragraphs text-success" style="white-space:pre">{{career}}</h5>
             </div>
@@ -167,7 +168,7 @@
             <button type="button" class="btn btn-default" ng-click="restartEverything()">Restablecer</button>
             <a href="/home" class="btn btn-default" >Inicio</a>
             <!-- <button type="button" class="btn btn-default" ng-click="" ng-hide="endOfQuestions == true">Inicio</button> -->
-            <button type="button" class="btn btn-default" ng-click="printDiv('printable')" ng-show="endOfQuestions == true">Imprimir</button>
+            <!-- <button type="button" class="btn btn-default" ng-click="printDiv('printable')" ng-show="endOfQuestions == true">Imprimir</button> -->
 
         </div>
     </div>
