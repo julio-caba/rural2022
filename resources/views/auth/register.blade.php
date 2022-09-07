@@ -57,7 +57,7 @@
 
     <div class="card" id="tarjeta">
         <div class="card-body register-card-body">
-            <p class="login-box-msg">Registrese antes de ingresar a los juegos</p>
+            <p class="login-box-msg">Registrese para poder ingresar</p>
 
             <form method="post" action="{{ route('register') }}">
                 @csrf

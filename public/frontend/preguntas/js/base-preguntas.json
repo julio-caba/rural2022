@@ -48,5 +48,36 @@
         "incorrecta3": "Utilizar bombillas de bajo consumo",
         "imagen": "",
         "objectFit": "cover"
+    },
+    {
+        "categoria": "Empresas Verdes",
+        "pregunta": "Cual de las siguientes empresas  lideró el ranking en 2021?",
+        "respuesta": "Schneider Electric SE (Francia) ",
+        "incorrecta1": "Siemens AG (Alemania)",
+        "incorrecta2": "Cisco Systems Inc (USA)",
+        "incorrecta3": "Iberdrola SA (España)",
+        "imagen": "",
+        "objectFit": "cover"
+    },
+    {
+        "categoria": "Empresas Verdes",
+        "pregunta": "¿Qué se entiende por economía verde?",
+        "respuesta": "El reconocimiento del valor económico, del capital natural y de los servicios ecológicos",
+        "incorrecta1": "Los conceptos económicos y valores relacionados con el dólar",
+        "incorrecta2": "Todas son incorrectas",
+        "incorrecta3": "El comienzo de un desarrollo económico basado en productos de fuentes naturales",
+        "imagen": "",
+        "objectFit": "cover"
+    },
+    {
+        "categoria": "Empresas Verdes",
+        "pregunta": "¿Cómo identificar a una empresa verde?",
+        "respuesta": "Todas son incorrectas ",
+        "incorrecta1": "genera Impacto ambiental negativo",
+        "incorrecta2": "Uso ineficiente de recursos para la producción",
+        "incorrecta3": "Poca responsabilidad social y ambiental en la cadena de valor de la empresa",
+        "imagen": "",
+        "objectFit": "cover"
     }
+    
 ]
