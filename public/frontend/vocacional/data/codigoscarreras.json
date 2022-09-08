@@ -2,7 +2,7 @@
   "careers":[
     {
       
-      "name":"Ingenieria en Sistemas \nMedicina Veterinaria \nEducación Inicial/Temprana \nArtes y Música"
+      "name":"Ingenieria en Sistemas \nMedicina Veterinaria \nCiencias de la Educación \nProfesorado en Artes Visuales"
      
     },
     {
@@ -24,6 +24,15 @@
       "C":"0"
     },
     {
+      "name":"Tecnicatura Superior en Emprendimientos Socioproductivos \nprofesorado en artes visuales",
+      "R":"1",
+      "I":"1",
+      "A":"1",
+      "S":"0",
+      "E":"0",
+      "C":"0"
+    },
+    {
       "name":"Abogacia",
       "R":"1",
       "I":"0",
@@ -39,15 +48,6 @@
       "A":"1",
       "S":"1",
       "E":"1",
-      "C":"0"
-    },
-    {
-      "name":"Artes y Música",
-      "R":"1",
-      "I":"1",
-      "A":"1",
-      "S":"0",
-      "E":"0",
       "C":"0"
     },
     {
@@ -96,7 +96,7 @@
       "C":"0"
     },
     {
-      "name":"Educación Inicial/Temprana",
+      "name":"Ciencias de la Educación",
       "R":"0",
       "I":"0",
       "A":"1",
@@ -126,15 +126,6 @@
       "name":"Ingeniería en Sistemas",
       "R":"1",
       "I":"1",
-      "A":"1",
-      "S":"0",
-      "E":"1",
-      "C":"0"
-    },
-    {
-      "name":"Ingeniería en Sistemas",
-      "R":"1",
-      "I":"1",
       "A":"0",
       "S":"0",
       "E":"0",
@@ -150,7 +141,7 @@
       "C":"0"
     },
     {
-      "name":"Educación Inicial/Temprana",
+      "name":"Ciencias de la Educación",
       "R":"1",
       "I":"1",
       "A":"0",
@@ -159,7 +150,7 @@
       "C":"0"
     },
     {
-      "name":"Ingeniería Industrial",
+      "name":"Ingeniería en Sistemas\nIngeniería Industrial \nIngeniería en Computación",
       "R":"1",
       "I":"1",
       "A":"1",
@@ -177,7 +168,7 @@
       "C":"0"
     },
     {
-      "name":"Psicología Clínica",
+      "name":"Psicología \nAbogacía \nLicenciatura en Enfermería ",
       "R":"0",
       "I":"1",
       "A":"1",

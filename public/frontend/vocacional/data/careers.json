@@ -9,7 +9,7 @@
       "code":"ERS"
     },
     {
-      "name":"Artes y Música",
+      "name":"Profesorado en artes visuales",
       "code":"RAC"
     },
     {
@@ -33,7 +33,7 @@
       "code":"ESA"
     },
     {
-      "name":"Artes y Música",
+      "name":"Profesorado en Música \nProfesorado en artes visuales \nTecnicatura Superior en Diseño y Producción Multimedial",
       "code":"ARI"
     },
     {
@@ -41,7 +41,7 @@
       "code":"SRI"
     },
     {
-      "name":"Ciencias Politicas ",
+      "name":"Marketing ",
       "code":"SEC"
     },
     {
@@ -49,12 +49,16 @@
       "code":"AIR"
     },
     {
-      "name":"Ingeniería en Sistemas \nArquitectura \nProfesorado en Matemáticas",
+      "name":"Arquitectura \nIngeniería en Sistemas \nProfesorado en Matemáticas",
       "code":"IAR"
     },
     {
       "name":"Publicidad",
       "code":"ESA"
+    },
+    {
+      "name":"Publicidad \nMarketing \nContador Público \nDerecho",
+      "code":"ECR"
     },
     {
       "name":"Publicidad",
@@ -69,7 +73,7 @@
       "code":"AES"
     },
     {
-      "name":"Educación Inicial/Temprana",
+      "name":"Ciencias de la Educación",
       "code":"SAE"
     },
     {
