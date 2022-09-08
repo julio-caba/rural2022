@@ -51,14 +51,14 @@
 <body class="hold-transition register-page">
 <div class="register-box">
     <div class="register-logo">        
-        <img src="img/footer-logo.png" alt="">
+        <img src="img/footer-logo.png" alt="">        
         <h1 class="text-white">Municipalidad de General Pico</h1> 
     </div>
 
     <div class="card" id="tarjeta">
         <div class="card-body register-card-body">
-            <p class="login-box-msg">Registrese para poder ingresar</p>
-
+            {{-- <p class="login-box-msg">Registrese para poder ingresar</p> --}}
+            <img class="pb-3" src="img/estadisticas.png" alt="" style="display: block; margin: 0px auto; width:85%;">
             <form method="post" action="{{ route('register') }}">
                 @csrf
                 <div class="input-group mb-3">
@@ -79,8 +79,9 @@
                     </div>          
                 </div>
             </form>         
-        </div>        
+        </div>               
     </div>
+
 </div>
 <!-- /.register-box -->
 

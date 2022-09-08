@@ -63,6 +63,7 @@
             </li>
         </ul>
  -->
+        {{-- <img src="img/estadisticas.png" alt="" style="display: block; margin: 0px auto; width:30%;"> --}}
         <ul class="navbar-nav ml-auto">
             <a href="#" class="btn btn-outline-dark float-right"
                            onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
